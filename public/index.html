@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number Converter</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Number Converter</h1>
+
+    <div class="converter">
+      <div class="input-section">
+        <label for="decimal">Decimal</label>
+        <input type="text" id="decimal" placeholder="Enter Decimal" oninput="convertFromDecimal()">
+      </div>
+
+      <div class="input-section">
+        <label for="binary">Binary</label>
+        <input type="text" id="binary" placeholder="Enter Binary" oninput="convertFromBinary()">
+      </div>
+
+      <div class="input-section">
+        <label for="octal">Octal</label>
+        <input type="text" id="octal" placeholder="Enter Octal" oninput="convertFromOctal()">
+      </div>
+
+      <div class="input-section">
+        <label for="hexadecimal">Hexadecimal</label>
+        <input type="text" id="hexadecimal" placeholder="Enter Hexadecimal" oninput="convertFromHex()">
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button onclick="clearAll()">Clear All</button>
+    </div>
+
+    <div class="memory">
+      <h2>Memory</h2>
+      <ul id="memoryList"></ul>
+      <button onclick="clearMemory()">Clear Memory</button>
+    </div>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+</html>
